@@ -1,8 +1,8 @@
 import Logo from './logo';
 import NextLink from 'next/link';
 import { Container,Box,Stack,Heading,Flex,Menu,MenuItem,MenuList,MenuButton,IconButton,Link,useColorModeValue} from '@chakra-ui/react';
-// import {HamburgerIcon} from '@chakra-ui/icon';
-
+import {HamburgerIcon} from '@chakra-ui/icons'
+import ThemeToggleButton from './theme-toggle-button';
 
 export const LinkItem = ({children,path,href}) => {
     const active  =  path === href;
@@ -47,6 +47,32 @@ const Navbar  =props => {
                 <LinkItem href='/works'>works</LinkItem>
                 <LinkItem href='/posts'>posts</LinkItem>
               </Stack>
+              <Box flex='1' align='right'>
+                  <ThemeToggleButton/>
+                  <Box display={{base:"inline-block"}} ml={2}>
+                      <Menu>
+                          <MenuButton as={IconButton} icon={<HamburgerIcon/>} variant='outline' aria-label='options'/>
+                          <MenuList>
+                              <NextLink href='/' passhref>
+                              <MenuItem as={Link}>
+                                 About
+                              </MenuItem>
+                              </NextLink>
+                              <NextLink href='/works' passhref>
+                              <MenuItem as={Link}>
+                                 Works
+                              </MenuItem>
+                              </NextLink>
+                              <NextLink href='/posts' passhref>
+                              <MenuItem as={Link}>
+                                 Posts
+                              </MenuItem>
+                              </NextLink>
+                          </MenuList>
+                      </Menu>
+
+                  </Box>
+              </Box>
           </Container>
         </Box>
     )
