@@ -42,7 +42,7 @@ const  Page = () => {
            Khirshanth is a Frontend Developer having 2+ years of experience in  design and development of progressive web apps.I love to be apart of Web development and worked on project based on frontend development using React Js.Also my area of expertise are DSA,Javascript,ReactJs,NextJs,Python.
         </Paragraph>
        <Box align='center' my={4}>
-         <NextLink href='/works'>
+         <NextLink href='/works' passhref>
             <Button
               rightIcon={<ChevronRightIcon/>}
               colorScheme='teal'
@@ -61,7 +61,7 @@ const  Page = () => {
         </BioSection>
         <BioSection>
             <BioYear>2020</BioYear>
-            Completed the Bachelor's degree in Computer Science at K.S.Rangasamy college of technology.
+            Completed the Bachelor&apos;s degree in Computer Science at K.S.Rangasamy college of technology.
         </BioSection>
         <BioSection>
             <BioYear>2020 -present</BioYear>
