@@ -39,7 +39,7 @@ const  Page = () => {
             work
         </Heading>
         <Paragraph>
-           Khirshanth is a Frontend Developer having 2+ years of experience in  design and development of progressive web apps.I love to be apart of Web development and worked on project based on frontend development using React Js.Also my area of expertise are DSA>Javascript>ReactJs>NextJs>Python.
+           Khirshanth is a Frontend Developer having 2+ years of experience in  design and development of progressive web apps.I love to be apart of Web development and worked on project based on frontend development using React Js.Also my area of expertise are DSA,Javascript,ReactJs,NextJs,Python.
         </Paragraph>
        <Box align='center' my={4}>
          <NextLink href='/works'>
