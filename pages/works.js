@@ -4,7 +4,7 @@ import Section from "../components/layouts/section"
 import VSLOGO from '../public/vs.png';
 import LFLOGO from '../public/lf.png';
 import Layout from '../components/layouts/article';
-
+import ISLOGO from '../public/is.jpg'
 const Works = () => {
   return (
     <Layout>
@@ -24,8 +24,8 @@ const Works = () => {
    </SimpleGrid>
    <Section delay={0.5}>
      <Divider my={6}/>
-           <WorkGridItem id='virtualstaff' title='virtualstaff' thumbnail={VSLOGO}>
-               A freelancing platform,with SEO,Chat,Video call,TimeTracker,Admin panel,Payment gateway.
+           <WorkGridItem id='illumnsense' title='illumnsense' thumbnail={ISLOGO}>
+           Illumesense is a Data Analytics and intelligent Telehealth software platform, real-world health and benchmark data, with analytics dashboards.
            </WorkGridItem>
       </Section>
  </Container>

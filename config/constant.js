@@ -1,6 +1,7 @@
 import LOGOONE from '../public/vsone.png';
 import LOGOTWO from '../public/vstwo.png';
 import LFLOGO from '../public/lf.png';
+import ISLOGO from '../public/is.jpg'
 export const PROJECT_DATA = [
     {'virtualstaff' : {
         title: 'Virtualstaff',
@@ -18,6 +19,14 @@ export const PROJECT_DATA = [
     stack:'React,Unity,Electron,',
     learned:'WebGL,IndexedDB',
     images:[LFLOGO]
+},
+},{'illumnsense' : {
+    title: 'illumnsense',
+    description: ' Illumesense is a Data Analytics and intelligent Telehealth software platform, real-world health and benchmark data, with analytics dashboards.',
+    url:'https://portal.illumesense.comm',
+    stack:'React,Redun Saga,',
+    learned:'Created a custom event scheduler using js',
+    images:[ISLOGO]
 },
 },
 ]

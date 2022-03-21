@@ -1,4 +1,4 @@
-import {Box,Container, Heading,Button} from "@chakra-ui/react";
+import {Box,Container, Heading,Button,SimpleGrid,List,ListItem,Icon} from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 import Profile from '../public/profile.jpg';
 import Image from 'next/image';
@@ -7,7 +7,11 @@ import Paragraph from '../components/layouts/paragraph';
 import {ChevronRightIcon} from "@chakra-ui/icons";
 import NextLink from 'next/link';
 import {BioYear,BioSection} from '../components/layouts/bio';
-import Layout from '../components/layouts/article'
+import Layout from '../components/layouts/article';
+import { IoLogoGithub ,IoLogoLinkedin,IoLogoAndroid} from "react-icons/io5";
+import {GridItem} from "../components/layouts/grid-tem.js"
+import Link from "next/link";
+
 const  Page = () => {
   return (
     <Layout>
@@ -23,12 +27,11 @@ const  Page = () => {
             <h2>2+ years of experience (Designing / Development)</h2>
          </Box>
       </Box>
-      <Box flexShrink={0} mt={{base:4,md:0}} ml={{md:6}} align='center' >
+      <Box flexShrink={0} mt={{base:4,md:0}} ml={{md:6}} align='center' maxWidth={100} >
           <Image 
            borderColor='whiteAlpha.800'
            borderWidth={2}
-           borderStyle='solid'
-           maxWidth='100px'
+           borderStyle="solid"         
            display='inline-block'
            borderRadius={50}
            src={Profile}
@@ -74,6 +77,45 @@ const  Page = () => {
 
         </Heading>
         <Paragraph>Music,Photography,Solving problems...</Paragraph>
+      </Section>
+      {/* <Section delay={0.2}>
+      <Heading as='h3' variant='section-title'>
+           Others
+
+        </Heading>
+        <Box  my={4}>
+         <a align='center' href={require("../public/resume.pdf")} download >
+            <Button
+              rightIcon={<ChevronRightIcon/>}
+              colorScheme='teal'
+            >Download Resume</Button>
+         </a>
+
+       </Box>
+      
+      </Section> */}
+        <Section delay={0.2}>
+      <Heading as='h3' variant='section-title'>
+           On the web
+
+        </Heading>
+        <List>
+    <ListItem>
+       <Link href='http://www.github.com/khirshanth99' target='_blank'>
+         <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoGithub}/>}>@khirshanth99</Button>
+       </Link> 
+    </ListItem>
+    <ListItem>
+       <Link href='https://www.linkedin.com/in/khirshanth-m-18632216b' target='_blank'>
+         <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoLinkedin}/>}>@LinkedIn</Button>
+       </Link> 
+    </ListItem>
+    <ListItem>
+       <Link href='https://leetcode.com/khirshanth99/' target='_blank'>
+         <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoAndroid}/>}>@leetcode</Button>
+       </Link> 
+    </ListItem>
+    </List>
       </Section>
    </Container>
    </Layout>
