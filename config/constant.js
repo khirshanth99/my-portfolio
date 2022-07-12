@@ -21,7 +21,7 @@ export const PROJECT_DATA = [
     images:[LFLOGO]
 },
 },{'illumnsense' : {
-    title: 'illumnsense',
+    title: 'Illumnsense',
     description: ' Illumesense is a Data Analytics and intelligent Telehealth software platform, real-world health and benchmark data, with analytics dashboards.',
     url:'https://portal.illumesense.comm',
     stack:'React,Redun Saga,',

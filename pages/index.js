@@ -67,8 +67,8 @@ const  Page = () => {
             Completed the Bachelor&apos;s degree in Computer Science at K.S.Rangasamy college of technology.
         </BioSection>
         <BioSection>
-            <BioYear>2020 -present</BioYear>
-          Working as Frontend Engineer at Colan Infotech
+            <BioYear>2020 -2021</BioYear>
+          Worked  as Frontend Intern  at Verzeo.
         </BioSection>
       </Section>
       <Section delay={0.2}>
