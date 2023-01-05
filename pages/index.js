@@ -17,14 +17,14 @@ const  Page = () => {
     <Layout>
    <Container   color={useColorModeValue('black','white')} >
       <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500','whiteAlpha.200')}p={3} mb={6} align='center'>
-        Hello !.I am a Frontend developer.
+        Hello !.I am a Fullstack developer.
       </Box>
       <Box display={{md:"flex"}}>
          <Box flexGrow={1}>
             <Heading as="h2" variant='page-title'>
               Khirshanth M
             </Heading>
-            <h2>2+ years of experience (Designing / Development)</h2>
+            <h2>3.5+ years of experience (Designing / Development)</h2>
          </Box>
       </Box>
       <Box flexShrink={0} mt={{base:4,md:0}} ml={{md:6}} align='center' maxWidth={100} >
@@ -42,7 +42,7 @@ const  Page = () => {
             work
         </Heading>
         <Paragraph>
-           Khirshanth is a Frontend Developer having 2+ years of experience in  design and development of progressive web apps.I love to be apart of Web development and worked on project based on frontend development using React Js.Also my area of expertise are DSA,Javascript,ReactJs,NextJs,Python.
+           Khirshanth is a Fullstack Developer having 3.5+ years of experience in  design and development of progressive web apps.I love to be apart of Web development and worked on project based on frontend development using React Js.Also my area of expertise are DSA,Javascript,ReactJs,NextJs,Python,NodeJs,MongoDB.
         </Paragraph>
        <Box align='center' my={4}>
          <NextLink href='/works' passhref>
@@ -70,13 +70,17 @@ const  Page = () => {
             <BioYear>2020 -2021</BioYear>
           Worked  as Frontend Intern  at Verzeo.
         </BioSection>
+        <BioSection>
+            <BioYear>2021 -present</BioYear>
+          Working  as MERN stack developer at Colan Infotech.
+        </BioSection>
       </Section>
       <Section delay={0.2}>
       <Heading as='h3' variant='section-title'>
             I &hearts;
 
         </Heading>
-        <Paragraph>Music,Photography,Solving problems...</Paragraph>
+        <Paragraph>Music,Photography,Acting,Solving problems...</Paragraph>
       </Section>
       {/* <Section delay={0.2}>
       <Heading as='h3' variant='section-title'>
